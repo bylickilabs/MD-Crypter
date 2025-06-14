@@ -135,8 +135,8 @@ output muss im Hauptverzeichnis erstellt werden, und liegen
  - Beispiel ausführen:
 
 ```bash
-node mdcrypt.js encrypt examples/geheim.md --out output/test.mdc
-node mdcrypt.js decrypt output/test.mdc --out output/test.decrypted.md
+node mdcrypt.js encrypt examples/geheim.md --out output/geheim.mdc
+node mdcrypt.js decrypt output/geheim.mdc --out output/geheim.decrypted.md
 ```
 
 <br>
