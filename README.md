@@ -5,6 +5,9 @@
 
 > Verschlüssele vertrauliche Abschnitte in Markdown-Dokumenten sicher mit AES-256 – selektiv, effizient und CLI-basiert.
 
+|![MD-Crypter1](https://github.com/user-attachments/assets/4bd7bf09-4f68-4885-9fc1-2dde832d825d)|
+|---|
+
 <br>
 
 ---
