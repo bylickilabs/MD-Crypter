@@ -1,7 +1,10 @@
 > 🔐 MD-Crypt
 
-| ![Build Status](https://github.com/bylickilabs/MD-Crypter/actions/workflows/main.yml/badge.svg) | ![Node.js Versions](https://img.shields.io/badge/node-18.x-brightgreen) | ![Repo Size](https://img.shields.io/github/repo-size/bylickilabs/MD-Crypter) | ![License](https://img.shields.io/github/license/bylickilabs/MD-Crypter) | ![Last Commit](https://img.shields.io/github/last-commit/bylickilabs/MD-Crypter) |
-|---|---|---|---|---|
+| ![Node.js Versions](https://img.shields.io/badge/node-18.x-brightgreen) | ![Build Status](https://github.com/bylickilabs/MD-Crypter/actions/workflows/main.yml/badge.svg)  ![CLI Tool](https://img.shields.io/badge/interface-CLI-blue?logo=terminal) | ![Encrypted](https://img.shields.io/badge/Encrypted-AES--256-informational?logo=lock) | ![Markdown](https://img.shields.io/badge/format-markdown-lightgrey?logo=markdown) | ![Security](https://img.shields.io/badge/focus-Security-critical?logo=shield) | ![Stability](https://img.shields.io/badge/stability-stable-brightgreen) |
+|---|---|---|---|---|---|
+
+| ![License](https://img.shields.io/github/license/bylickilabs/MD-Crypter) | ![Last Commit](https://img.shields.io/github/last-commit/bylickilabs/MD-Crypter) |
+|---|---|
 
 > Schütze vertrauliche Abschnitte in Markdown-Dokumenten sicher mit AES-256 – selektiv, effizient und CLI-basiert.
 
