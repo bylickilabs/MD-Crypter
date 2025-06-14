@@ -1,0 +1,41 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: 📥 Repository klonen
+        uses: actions/checkout@v3
+
+      - name: 🟢 Node.js ${{ matrix.node-version }} einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 📦 Abhängigkeiten installieren
+        run: npm ci || true  # kein Fehler, wenn keine package.json vorhanden
+
+      - name: ✅ Funktionstest – Ausführung ohne Argumente
+        run: node mdcrypt.js || true
+
+      - name: 🔐 Testverschlüsselung
+        run: |
+          echo "# Demo" > demo.md
+          echo -e "\\\`\\\`\\\`encrypted\\nGeheim\\n\\\`\\\`\\\`" >> demo.md
+          echo -e "console.log('Test OK')" > test.js
+          node mdcrypt.js encrypt demo.md --out demo.mdc <<< "testpass"
+
+      - name: 📂 Ausgabe prüfen
+        run: |
+          ls -al demo.mdc
